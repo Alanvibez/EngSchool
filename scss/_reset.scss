@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    font-weight: normal;
+}
+
+ul{
+    list-style: none;
+}
+
+span{
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.btn{
+    color: $yellow;
+    background-color: $orange;
+    padding: 15px 40px;
+    border-radius: 10px;
+    font-weight: 700;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    &:hover{
+        color:#ffdd48;
+        background-color: #ff390d;
+    }
+}

@@ -1,0 +1,137 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.541);
+    place-items: center;
+    padding: 25px;
+    animation: fade .5s ease-in-out;
+
+    @keyframes fade {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+
+    }
+}
+
+.modal-container {
+    width: 100%;
+    max-width: 680px;
+    height: auto;
+    text-align: center;
+    padding: 50px 80px 100px 80px;
+    background: #F5F5F1;
+    border-radius: 5px;
+    animation: trans 1s ease-in-out;
+
+    @media (max-width:$breakPoint590) {
+        padding: 30px 20px 70px 20px;
+    }
+
+    @keyframes trans {
+        0% {
+            opacity: 0;
+            transform: translateY(100%);
+        }
+
+        50% {
+            opacity: 1;
+            transform: translateY(-70px);
+        }
+
+        70% {
+            transform: translateY(20px);
+        }
+
+        100% {
+            transform: translateY(0);
+            
+        }
+
+    }
+
+    &_title {
+        font-weight: 700;
+        font-size: 36px;
+        margin: 40px 0;
+
+        @media (max-width:$breakPoint590) {
+            font-size: 27px;
+        }
+    }
+
+    &_form {
+        input {
+            text-transform: capitalize;
+            font-family: "Montserrat", sans-serif;
+            width: 100%;
+            background-color: rgba(236, 235, 221, 1);
+            border: 1px solid rgba(221, 200, 162, 1);
+            padding: 20px 35px;
+            margin: 10px 0;
+            font-weight: 500;
+            font-size: 18px;
+
+            &:focus {
+                outline: 1px solid #32C0CE;
+            }
+        }
+
+        textarea {
+            font-family: "Montserrat", sans-serif;
+            width: 100%;
+            height: 120px;
+            margin: 10px 0 50px 0;
+            background-color: rgba(236, 235, 221, 1);
+            border: 1px solid rgba(221, 200, 162, 1);
+            font-weight: 500;
+            font-size: 18px;
+            padding: 20px 35px;
+            resize: none;
+
+            &:focus {
+                outline: 1px solid #32C0CE;
+            }
+        }
+
+        textarea:focus::-webkit-input-placeholder,
+        input:focus::-webkit-input-placeholder {
+            color: transparent;
+        }
+    }
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    @media (max-width:$breakPoint590) {
+        flex-direction: column;
+    }
+
+    #close {
+        cursor: pointer;
+        color: rgba(255, 91, 53, 1);
+        text-decoration: underline;
+        font-weight: 700;
+        font-size: 18px;
+    }
+}
+
+.btn {
+    font-weight: 700;
+    font-size: 18px;
+
+    @media (max-width:$breakPoint590) {
+        width: 100%;
+    }
+}

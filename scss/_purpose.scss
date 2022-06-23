@@ -1,0 +1,125 @@
+.purpose {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(245, 245, 241, 1);
+
+    &_container {
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 50px 0 0 0;
+
+        h1 {
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 47px;
+        }
+
+        p {
+            margin: 30px 0 50px 0;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 27px;
+            max-width: 490px;
+            margin: 40px auto;
+        }
+
+        @media (max-width:$breakPoint590) {
+            text-align: start;
+
+            .purpose-title {
+                font-size: 22px;
+                line-height: 29px;
+                padding-left: 25px;
+            }
+
+            .purpose-text {
+                font-size: 14px;
+                line-height: 23px;
+                padding-left: 25px;
+            }
+        }
+    }
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding-bottom: 100px;
+
+    &_card {
+        display: grid;
+        grid-template-rows: 1.1fr 1fr;
+        padding: 20px 40px;
+
+        &:nth-child(1) {
+            background-color: rgba(51, 192, 206, 1);
+        }
+
+        &:nth-child(2) {
+            background-color: rgba(253, 212, 195, 1);
+        }
+
+        &:nth-child(3) {
+            background-color: rgba(244, 217, 98, 1);
+        }
+    }
+
+    @media (max-width:$breakPoint1200) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        margin: 0 auto;
+        max-width: 700px;
+
+        &_card {
+            grid-template-rows: 1fr .5fr;
+
+            img {
+                margin: 0 auto;
+            }
+        }
+    }
+
+    @media (max-width:$breakPoint590) {
+        &_card {
+            padding: 25px;
+            grid-template-rows: .8fr 1fr;
+        }
+    }
+}
+
+.card {
+
+    &_img {
+        display: flex;
+        align-items: center;
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    &_content {
+        text-align: start;
+        padding-top: 15px;
+        border-top: 1px solid black;
+
+        @media (max-width:$breakPoint1200) {
+            border: none;
+        }
+
+        h1 {
+            font-weight: 500;
+            font-size: 36px;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 27px;
+        }
+    }
+}

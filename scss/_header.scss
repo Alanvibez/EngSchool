@@ -1,0 +1,57 @@
+.header {
+    max-width: $containerWidth;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    height: 150px;
+    @media (max-width:$breakPoint940){
+        height: 100%;
+        .contact{
+            display: none;
+        }
+    }
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+
+    &_title {
+        color: $blue;
+        line-height: 23px;
+    }
+}
+
+.contact {
+    display: flex;
+    gap: 35px;
+
+    &_btn {
+        border-radius: 10px;
+        border: 1px solid rgba(24, 24, 23, 1);
+        font-weight: 600;
+        padding: 15px 20px;
+        transition: .2s ease-in-out;
+
+        &:hover {
+            background-color: $orange;
+            color: $yellow;
+            border: 1px solid $orange
+        }
+    }
+
+    &_phone {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: right;
+        gap: 5px;
+
+        a {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+}
