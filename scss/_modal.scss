@@ -52,7 +52,7 @@
 
         100% {
             transform: translateY(0);
-            
+
         }
 
     }
@@ -80,7 +80,8 @@
             font-size: 18px;
 
             &:focus {
-                outline: 1px solid #32C0CE;
+                outline: none;
+                border: 1px solid #32C0CE;
             }
         }
 
@@ -97,7 +98,8 @@
             resize: none;
 
             &:focus {
-                outline: 1px solid #32C0CE;
+                outline: none;
+                border: 1px solid #32C0CE;
             }
         }
 

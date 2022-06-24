@@ -1094,7 +1094,8 @@ a {
   font-size: 18px;
 }
 .modal-container_form input:focus {
-  outline: 1px solid #32C0CE;
+  outline: none;
+  border: 1px solid #32C0CE;
 }
 .modal-container_form textarea {
   font-family: "Montserrat", sans-serif;
@@ -1109,7 +1110,8 @@ a {
   resize: none;
 }
 .modal-container_form textarea:focus {
-  outline: 1px solid #32C0CE;
+  outline: none;
+  border: 1px solid #32C0CE;
 }
 .modal-container_form textarea:focus::-webkit-input-placeholder,
 .modal-container_form input:focus::-webkit-input-placeholder {
