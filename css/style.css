@@ -262,6 +262,12 @@ a {
   place-items: center;
   background: #F5F5F1;
 }
+@media (max-width: 940px) {
+  .video {
+    padding: 150px 25px;
+    height: 100%;
+  }
+}
 
 .video-container {
   width: 100%;
@@ -273,6 +279,15 @@ a {
   font-size: 32px;
   line-height: 36px;
   margin-bottom: 50px;
+}
+@media (max-width: 590px) {
+  .video-container_title {
+    font-weight: 700;
+    font-size: 14px;
+    text-align: start;
+    margin-bottom: 20px;
+    line-height: 18px;
+  }
 }
 .video-container video {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -433,10 +448,23 @@ a {
   font-weight: 500;
   font-size: 36px;
 }
+@media (max-width: 940px) {
+  .card_content h1 {
+    font-weight: 600;
+    font-size: 24px;
+  }
+}
 .card_content p {
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
+}
+@media (max-width: 940px) {
+  .card_content p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+  }
 }
 
 .admission {
