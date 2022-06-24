@@ -31,13 +31,14 @@
             .purpose-title {
                 font-size: 22px;
                 line-height: 29px;
-                padding-left: 25px;
+                padding: 0 25px;
             }
 
             .purpose-text {
+                margin: 0;
                 font-size: 14px;
                 line-height: 23px;
-                padding-left: 25px;
+                padding: 40px 25px;
             }
         }
     }
@@ -85,7 +86,7 @@
     @media (max-width:$breakPoint590) {
         &_card {
             padding: 25px;
-            grid-template-rows: .8fr 1fr;
+            grid-template-rows: 1fr .6fr;
         }
     }
 }
@@ -125,7 +126,7 @@
             font-weight: 500;
             font-size: 18px;
             line-height: 27px;
-
+            margin: 25px 0;
             @media (max-width:$breakPoint940) {
                 font-weight: 500;
                 font-size: 16px;

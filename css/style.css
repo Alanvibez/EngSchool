@@ -376,12 +376,13 @@ a {
   .purpose_container .purpose-title {
     font-size: 22px;
     line-height: 29px;
-    padding-left: 25px;
+    padding: 0 25px;
   }
   .purpose_container .purpose-text {
+    margin: 0;
     font-size: 14px;
     line-height: 23px;
-    padding-left: 25px;
+    padding: 40px 25px;
   }
 }
 
@@ -422,7 +423,7 @@ a {
 @media (max-width: 590px) {
   .cards_card {
     padding: 25px;
-    grid-template-rows: 0.8fr 1fr;
+    grid-template-rows: 1fr 0.6fr;
   }
 }
 
@@ -458,6 +459,7 @@ a {
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
+  margin: 25px 0;
 }
 @media (max-width: 940px) {
   .card_content p {
@@ -484,6 +486,7 @@ a {
   .admission_container {
     flex-direction: column;
     padding: 50px 25px;
+    gap: 60px;
   }
 }
 
