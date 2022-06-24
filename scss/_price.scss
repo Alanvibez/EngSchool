@@ -44,11 +44,13 @@
             margin: 0;
         }
     }
-}
-
-.btn {
-    @media (max-width:$breakPoint590){
-        padding: 15px 10px;
-        font-size: 14px;
+    .btn {
+        display: flex;
+        justify-content: center;
+        @media (max-width:$breakPoint590){
+            padding: 15px 10px;
+            font-size: 15px;
+        }
     }
 }
+
